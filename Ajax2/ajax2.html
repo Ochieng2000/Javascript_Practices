@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax 2 Text File</title>
+</head>
+<body>
+    <button>Get Text File</button>
+    <div class="text"></div>
+
+    <script>
+        let data;
+        const btn = document.querySelector('button');
+        btn.addEventListener('click', function(loadText){
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'simple.txt', true);
+            
+            xhr.onreadystatechange = function(){
+                if(xhr.readyState == 4 && xhr.status == 200){
+                   data = xhr.responseText; 
+                    document.querySelector('.text').innerHTML = data;
+                }
+            }
+            xhr.send();
+        });        
+    </script>
+</body>
+</html>

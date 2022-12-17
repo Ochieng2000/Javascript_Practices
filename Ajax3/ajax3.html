@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local_JSON</title>
+</head>
+<body>
+    <button id="button1">Get Users</button>
+    <h2>Users</h2>
+    <div id="users"></div>
+
+    <script>
+        let data;
+        document.querySelector('#button1').addEventListener('click',loadUser);
+        function loadUser(){
+            let xhr = new XMLHttpRequest();
+            xhr.open('GET', 'users.json', true)
+            xhr.onload = function(){
+                if(xhr.status == 200){
+                    data = JSON.parse(xhr.responseText); 
+                    var output = '';
+                    for(var i in data){
+                        output += `<ul>
+                                        <li>ID: ${data[i].id}</<li>
+                                        <li>NAME: ${data[i].name}</<li>
+                                        <li>EMAIL: ${data[i].email}</<li>
+                                    </ul>
+                            `
+                    }
+                    document.querySelector('#users').innerHTML = output;
+                }
+            }
+            xhr.send();
+        };
+    </script>
+
+</body>
+</html>

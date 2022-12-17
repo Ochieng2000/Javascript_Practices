@@ -1,0 +1,52 @@
+[
+    {
+        "id":1,
+        "name":"Isaac Ochieng",
+        "email":"isaac.ochieng2000@gmail.com"
+    },
+    {
+        "id":2,
+        "name":"Mike Owili",
+        "email":"mikeowili@gmail.com"
+    },
+    {
+        "id":3,
+        "name":"Kiprotich",
+        "email":"rono200@gmail.com"
+    },
+    {
+        "id":4,
+        "name":"Isaac Ochieng",
+        "email":"isaac.ochieng2000@gmail.com"
+    },
+    {
+        "id":5,
+        "name":"Mike Owili",
+        "email":"mikeowili@gmail.com"
+    },
+    {
+        "id":6,
+        "name":"Kiprotich",
+        "email":"rono200@gmail.com"
+    },
+    {
+        "id":7,
+        "name":"Isaac Ochieng",
+        "email":"isaac.ochieng2000@gmail.com"
+    },
+    {
+        "id":8,
+        "name":"Mike Owili",
+        "email":"mikeowili@gmail.com"
+    },
+    {
+        "id":9,
+        "name":"Kiprotich",
+        "email":"rono200@gmail.com"
+    },
+    {
+        "id":10,
+        "name": "Reuben",
+        "email": "reuben@gmail.com"
+    }
+]

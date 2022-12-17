@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: 0;
+}
+body{
+    background-color:rgba(128, 128, 128, 0.438);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 90vh;
+    background-color: rgba(0, 0, 0, 0.555);
+    border-radius: 16px;
+    box-shadow: inset 6px 6px 6px white, inset -6px -6px 6px white;
+}
+.firstNumber, .secondNumber{
+    width: 100px;
+    height: 50px;
+    color: orange;
+    background-color: transparent;
+    outline: 3px solid white;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    font-size: 25px;
+}
+input{
+    width: 200px;
+    height: 60px;
+    border-radius: 8px;
+    border: 3px solid orange;
+    margin: 15px;
+    font-size: 25px;
+    color: orange;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: transparent;
+    text-align: center;
+}
+button{
+    width: 170px;
+    height: 60px;
+    border-radius: 8px;
+    background-color: black;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+    cursor: pointer;
+
+}
